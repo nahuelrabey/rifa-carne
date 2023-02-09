@@ -93,9 +93,7 @@
 		padding: 0px;
 		display: grid;
 		grid-template-columns: repeat(10, 10%);
-		/* flex-wrap: wrap;
-		gap: 10px; */
-		/* justify-content: space-between; */
+		row-gap: 1em;
 		justify-content: left;
 	}
 	@media (max-width: 600px) {
