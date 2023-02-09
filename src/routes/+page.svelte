@@ -1,6 +1,8 @@
 <script lang="ts">
 	import '@fontsource/bebas-neue';
 	import '@fontsource/montserrat';
+	import "@fontsource/roboto"
+
 	import type { data } from './+page';
 
 	export let data: data;
@@ -31,8 +33,9 @@
 
 <section>
 	<h1>Rifando Asado 😎</h1>
-	<p>1 x 200$, 5 x 500$, <span>¡10 x 800$!</span>, llevate varios y tené más chances de ganar 🏆</p>
-	<p>Que la parrilla te acompañe en este carnaval 🔥</p>
+	<p class="combo">1 x 200$, 5 x 500$, <span>¡10 x 800$!</span>, llevate varios y tené más chances de ganar 🏆</p>
+	<p class="gancho">Que la parrilla te acompañe en este carnaval 🔥</p>
+	<p class="tuto">Para participar, tenes que tocar el número que quieras comprar y nosotros nos ocupamos!</p>
 
 	<h2>disponibles 👀</h2>
 	<ul class="disponibles">
@@ -68,6 +71,7 @@
 		margin: auto;
 	}
 
+
 	@media (max-width: 600px) {
 		section {
 			width: 95vw;
@@ -76,7 +80,7 @@
 
 	h1 {
 		font-family: 'Bebas Neue', cursive;
-		font-size: 3em;
+		font-size: 4em;
 	}
 	h2 {
 		font-family: 'Montserrat', sans-serif;
@@ -84,10 +88,30 @@
 		color: #2f2f2f;
 	}
 
-	span {
-		color: #2f2f2f;
-		font-style: italic;
+	p {
+		font-family: "Roboto", sans-serif;
+		letter-spacing: 0.02em;
 	}
+
+	span {
+		color: rgb(209, 0, 0);
+		font-weight: bolder;
+	}
+
+	.combo {
+		font-weight: 600;
+		font-size: 2em;
+		color: rgba(0, 0, 0, 0.823)
+	}
+
+	.gancho {
+		font-size: 1.5em;
+	}
+
+	.tuto {
+		font-size: 1.15em;
+		color: rgba(0, 0, 0, 0.603)
+	}	
 
 	ul {
 		padding: 0px;
@@ -137,10 +161,6 @@
 		background-color: #2f2f2f0f;
 	}
 
-	span {
-		color: rgb(209, 0, 0);
-		font-weight: bolder;
-	}
 
 	.copy {
 		text-align: center;
