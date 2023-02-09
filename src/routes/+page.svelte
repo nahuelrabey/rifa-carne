@@ -12,13 +12,13 @@
 		const message = `¡Quiero el ${number}!`;
 		let phone: string;
 
-		if (number >= 1 && number <= 150) {
-			phone = '5491157553203';
-		} else {
-			phone = '5491162957756';
-		}
+		// if (number >= 1 && number <= 150) {
+		// 	phone = '5491157553203';
+		// } else {
+		// 	phone = '5491162957756';
+		// }Vkk
 
-		return `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+		return `https://api.whatsapp.com/send?phone=5491132134807&text=${encodeURIComponent(message)}`;
 	}
 
 	function createOnClick(number: number) {
@@ -150,4 +150,6 @@
 	.copy a:visited {
 		color: rgb(0, 0, 0);
 	}
+
+
 </style>
