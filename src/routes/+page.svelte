@@ -6,7 +6,7 @@
 	export let data: data;
 	const { vendidas, disponibles, objetivo, avance } = data;
 
-	const porcentaje = Math.ceil((avance / objetivo) * 100);
+	// const porcentaje = Math.ceil((avance / objetivo) * 100);
 
 	function createLink(number: number) {
 		const message = `¡Quiero el ${number}!`;
@@ -135,6 +135,11 @@
 		border: 2px solid rgb(138, 138, 138);
 		border-radius: 5px;
 		background-color: #2f2f2f0f;
+	}
+
+	span {
+		color: rgb(209, 0, 0);
+		font-weight: bolder;
 	}
 
 	.copy {
