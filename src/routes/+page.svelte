@@ -30,8 +30,9 @@
 </script>
 
 <section>
-	<h1>Rifa del Orgullo ❤️‍🔥</h1>
-	<span>Ya juntamos {avance.toLocaleString()}$ de {objetivo.toLocaleString()}$ que necesitamos para los gastos de la marcha, ayudanos con tu aporte!</span>
+	<h1>Rifando Asado 😎</h1>
+	<p>Cada número cuesta <span>¡100 pesitos!</span>, llevate varios y tené más chances de ganar</p>
+	<p>Que la parrilla te acompañe en este carnaval 🔥</p>
 
 	<h2>disponibles 👀</h2>
 	<ul class="disponibles">

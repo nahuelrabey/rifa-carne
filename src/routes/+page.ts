@@ -1,12 +1,13 @@
 import { calculateAdvances, calculateObjective, fetchData, getLibres, getVendidos } from './Data';
-/** @type {import('./$types').PageLoad} */
-
+import type { Rifa } from './Data';
 export type data = {
-	vendidas: import('/home/nahuel/Demos/RifaOnline/src/routes/Data').Rifa[];
-	disponibles: import('/home/nahuel/Demos/RifaOnline/src/routes/Data').Rifa[];
+	vendidas: Rifa[];
+	disponibles: Rifa[];
 	objetivo: number;
 	avance: number;
 };
+
+/** @type {import('./$types').PageLoad} */
 export async function load(): Promise<data> {
 	const rifas = await fetchData();
 	const vendidas = getVendidos(rifas);
