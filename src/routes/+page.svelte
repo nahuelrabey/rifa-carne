@@ -31,7 +31,7 @@
 
 <section>
 	<h1>Rifando Asado 😎</h1>
-	<p>Cada número cuesta <span>¡100 pesitos!</span>, llevate varios y tené más chances de ganar</p>
+	<p>1 x 200$, 5 x 500$, <span>¡10 x 800$!</span>, llevate varios y tené más chances de ganar 🏆</p>
 	<p>Que la parrilla te acompañe en este carnaval 🔥</p>
 
 	<h2>disponibles 👀</h2>
@@ -48,7 +48,9 @@
 	<ul class="vendidos">
 		{#each vendidas as row, index}
 			<li>
-				{row['Número']}
+				<div>
+					{row['Número']}
+				</div>
 			</li>
 		{/each}
 	</ul>
@@ -82,29 +84,40 @@
 		color: #2f2f2f;
 	}
 
-	span{
-		color:#2f2f2f;
+	span {
+		color: #2f2f2f;
 		font-style: italic;
 	}
 
 	ul {
 		padding: 0px;
-		display: flex;
-		flex-wrap: wrap;
-		gap: 10px;
+		display: grid;
+		grid-template-columns: repeat(10, 10%);
+		/* flex-wrap: wrap;
+		gap: 10px; */
 		/* justify-content: space-between; */
 		justify-content: left;
 	}
+	@media (max-width: 600px) {
+		ul {
+			grid-template-columns: repeat(5, 20%);
+		}
+	}
 	ul li {
+		/* width: 100%; */
+		text-align: center;
 		list-style: none;
 		padding: none;
 	}
+
 	.disponibles li button {
+		width: 90%;
+		margin: auto;
 		font-size: medium;
+		text-align: center;
+		padding: 1em 0em;
 		display: block;
-		padding: 1em;
 		border: 2px solid rgb(138, 138, 138);
-		margin: 0px;
 		border-radius: 5px;
 		background-color: white;
 	}
@@ -114,12 +127,14 @@
 		/* border-width: 1px; */
 	}
 
-	.vendidos li {
+	.vendidos li div{
+		width: 90%;
+		margin: auto;
 		font-size: medium;
+		text-align: center;
+		padding: 1em 0em;
 		display: block;
-		padding: 1em;
-		border: 1px solid black;
-		margin: 0px;
+		border: 2px solid rgb(138, 138, 138);
 		border-radius: 5px;
 		background-color: #2f2f2f0f;
 	}
