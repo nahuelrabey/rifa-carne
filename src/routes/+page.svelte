@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '@fontsource/bebas-neue';
 	import '@fontsource/montserrat';
-	import "@fontsource/roboto"
+	import '@fontsource/roboto';
 
 	import type { data } from './+page';
 
@@ -33,9 +33,11 @@
 
 <section>
 	<h1>Rifando Asado 😎</h1>
-	<p class="combo">1 x 200$, 5 x 500$, <span>¡10 x 800$!</span>, llevate varios y tené más chances de ganar 🏆</p>
-	<p class="gancho">Que la parrilla te acompañe en este carnaval 🔥</p>
-	<p class="tuto">Para participar, tenes que tocar el número que quieras comprar y nosotros nos ocupamos!</p>
+	<h2>GANADORRR 224</h2>
+	<!-- svelte-ignore a11y-missing-attribute -->
+	<div>
+		<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100082270183235%2Fvideos%2F232914775832912%2F&show_text=true&width=560&t=0" width="560" height="429" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen={true}></iframe>
+	</div>
 
 	<h2>disponibles 👀</h2>
 	<ul class="disponibles">
@@ -71,7 +73,6 @@
 		margin: auto;
 	}
 
-
 	@media (max-width: 600px) {
 		section {
 			width: 95vw;
@@ -89,7 +90,7 @@
 	}
 
 	p {
-		font-family: "Roboto", sans-serif;
+		font-family: 'Roboto', sans-serif;
 		letter-spacing: 0.02em;
 	}
 
@@ -101,7 +102,7 @@
 	.combo {
 		font-weight: 600;
 		font-size: 2em;
-		color: rgba(0, 0, 0, 0.823)
+		color: rgba(0, 0, 0, 0.823);
 	}
 
 	.gancho {
@@ -110,8 +111,8 @@
 
 	.tuto {
 		font-size: 1.15em;
-		color: rgba(0, 0, 0, 0.603)
-	}	
+		color: rgba(0, 0, 0, 0.603);
+	}
 
 	ul {
 		padding: 0px;
@@ -149,7 +150,7 @@
 		/* border-width: 1px; */
 	}
 
-	.vendidos li div{
+	.vendidos li div {
 		width: 90%;
 		margin: auto;
 		font-size: medium;
@@ -160,7 +161,6 @@
 		border-radius: 5px;
 		background-color: #2f2f2f0f;
 	}
-
 
 	.copy {
 		text-align: center;
@@ -175,6 +175,4 @@
 	.copy a:visited {
 		color: rgb(0, 0, 0);
 	}
-
-
 </style>
